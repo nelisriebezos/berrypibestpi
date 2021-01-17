@@ -53,7 +53,7 @@ def colors( x, n, on, off ):
            result.append( on )
       else:
            result.append( off )
-   # print(result)
+   print(result)
    return result           
 
 def walk( clock_pin, data_pin, delay, n = 8 ):

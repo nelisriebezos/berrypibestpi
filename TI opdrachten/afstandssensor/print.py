@@ -35,4 +35,4 @@ def sr04( trig_pin, echo_pin ):
 
 while True:
    print(sr04(trig, echo))
-   time.sleep( 0.5 )
+   time.sleep( 0.2 )
