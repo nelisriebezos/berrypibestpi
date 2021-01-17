@@ -3,13 +3,13 @@ import time
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(0)
 
-shift_clock_pin = 5
-latch_clock_pin = 6
-data_pin = 13
+SR_shift_gpio = 5
+SR_latch_gpio = 6
+SR_data_gpio = 13
 
-GPIO.setup(shift_clock_pin, GPIO.OUT)
-GPIO.setup(latch_clock_pin, GPIO.OUT)
-GPIO.setup(data_pin, GPIO.OUT)
+GPIO.setup(SR_shift_gpio, GPIO.OUT)
+GPIO.setup(SR_latch_gpio, GPIO.OUT)
+GPIO.setup(SR_data_gpio, GPIO.OUT)
 
 
 led = {
@@ -68,7 +68,7 @@ def pattern(inp):
 
 delay = 0.2
 
-activateMultiple(shift_clock_pin, latch_clock_pin, data_pin, [0,0,0,0,0,0,0,0])
+activateMultiple(SR_shift_gpio, SR_latch_gpio, SR_data_gpio, [0, 0, 0, 0, 0, 0, 0, 0])
 # while True:
 #     for i in range(1, 4, 1):
 #         activateMultiple(shift_clock_pin, latch_clock_pin,
