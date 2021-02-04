@@ -71,8 +71,7 @@ delay = 0.2
 activateMultiple(SR_shift_gpio, SR_latch_gpio, SR_data_gpio, [0, 0, 0, 0, 0, 0, 0, 0])
 # while True:
 #     for i in range(1, 4, 1):
-#         activateMultiple(shift_clock_pin, latch_clock_pin,
-#                          data_pin, pattern(i))
+#         activateMultiple(shift_clock_pin, latch_clock_pin,data_pin, pattern(i))
 #         time.sleep(delay)
 #
 #     for i in range(1, 9, 1):
@@ -80,8 +79,7 @@ activateMultiple(SR_shift_gpio, SR_latch_gpio, SR_data_gpio, [0, 0, 0, 0, 0, 0, 
 #         time.sleep(delay)
 #
 #     for i in range(4, 0, -1):
-#         activateMultiple(shift_clock_pin, latch_clock_pin,
-#                          data_pin, pattern(i))
+#         activateMultiple(shift_clock_pin, latch_clock_pin,data_pin, pattern(i))
 #         time.sleep(delay)
 #
 #     for i in range(8, 0, -1):
